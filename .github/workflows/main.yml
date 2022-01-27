@@ -32,3 +32,14 @@ jobs:
       - uses: aws-actions/setup-sam@v1
       - run: sam build
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+
+  deploy-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete
+        env:
+          AWS_S3_BUCKET: josephsatow.com
+          SOURCE_DIR: resumeAWS/resumeHTML

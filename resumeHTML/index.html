@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joseph Satow Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resume.css">
+
+</head>
+<body>
+
+<div id="resume">
+<h1>Joseph Satow</h1>
+<h2>
+  joseph.satow@gmail.com
+  <span class="diamondSymbol">&#10070;</span> (248)-977-9778
+  <span class="diamondSymbol">&#10070;</span> Macomb, MI
+</h2>
+
+<hr>
+<br>
+
+<h3>WORK EXPERIENCE</h3>
+<hr>
+<br>
+
+<h3>Johnstone Supply <span class="jobDate">June. 2019 - Nov. 2019</span></h3>
+<h3 class="jobTitle">IT Assistant <span class="jobLocation">Grand Rapids, MI</span></h3>
+
+<ul>
+  <li>Administered over 100 Windows 7/Windows 10 systems and iPads.</li>
+  <li>Primary point for desktop support, troubleshooting network problems, printers, software, and hardware.</li>
+  <li>Completed Windows 10 migration and configuration for entire Johnstone Supply organization, consisting of 70
+      systems throughout eight locations.</li>
+  <li>Patch management, remote control, configuration deployment through ManageEngine Desktop Central
+      management software.</li>
+  <li>Participated in industry trade show events setting up our customers with our mobile app and online web order
+      entry accounts.</li>
+</ul>
+
+<h3>DTE Energy <span class="jobDate">Summer 2018</span></h3>
+<h3 class="jobTitle">IT Summer Intern <span class="jobLocation">Detroit, MI</span></h3>
+<ul>
+  <li>Security Governance Team.</li>
+  <li>Collected and analyzed data from internal/external sources for security related assignments.
+  <li>Created and managed Excel databases used in an ongoing multi-year security project. Trained team on data
+      collection and entry.</li>
+  <li>Created a fully integrated SharePoint site for our team. Completely overhauled previous site, transferring all
+      data files to the new system. Trained team on how to use site, set security permissions, and wrote training manual with procedures to ensure viability of site upon leaving.</li>
+</ul>
+
+<h3>BSB Communications <span class="jobDate">Summer 2015</span></h3>
+<h3 class="jobTitle">IT Setup <span class="jobLocation">Lake Orion, MI</span></h3>
+<ul>
+  <li>Installed new phones throughout entire Lake Orion School district.</li>
+  <li>Replaced patch panel cables to proper code color.</li>
+</ul>
+
+<h3>EDUCATION</h3>
+<hr>
+<h3>Grand Valley State University <span class="jobDate">Apr. 2019</span></h3>
+<h3 class="jobTitle">BS, Information Systems <span class="jobLocation">Allendale, MI</span></h3>
+<ul>
+  <li>3.77 GPA for Information Systems core classes</li>
+  <li>Minor in General Business</li>
+  <li>GVSU Investment Portfolio Organization</li>
+</ul>
+
+<h3>CERTIFICATIONS</h3>
+<hr>
+<ul>
+  <li>Amazon AWS Certified Cloud Practitioner <span class="jobDate" style="font-size:1.17em; font-weight: bold;">Jan. 2021</span></li>
+</ul>
+
+<h3>SKILLS & INTERESTS</h3>
+<hr>
+<ul>
+  <li><strong>Skills: </strong>Published iOS app 'Penny Ops' (AWS EC2, Linux, Apache, MySQL, PHP, REST API, Swift); Java; HTML; CSS; hardware assembly/maintenance; Windows 7/10; Adobe Photoshop/Illustrator
+</li>
+  <li><strong>Interests: </strong>Weight training; nutrition; cooking; financial markets; options/futures trading; psychology; music; cars; reading; traveling; bowling; golf</li>
+</ul>
+</div>
+
+<div>
+  <script>
+      fetch(' https://okg2j4vavj.execute-api.us-east-1.amazonaws.com/Prod/put')
+        .then(() => fetch (' https://okg2j4vavj.execute-api.us-east-1.amazonaws.com/Prod/get'))
+        .then(response => response.json())
+        .then((data) => {
+          console.log(data)
+            document.getElementById('clicks').innerText = data['N']
+        })
+  </script>    <h3 id="count">Visitors: <a id="clicks"></a></h3>
+</div>
+
+
+</body>
+
+<footer
+</html>

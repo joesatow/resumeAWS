@@ -1,0 +1,74 @@
+html {
+  background-color: rgb(74,84,99);
+}
+
+body {
+
+}
+
+#resume {
+  margin: 2% 15% 0% 15%;
+  font-family: 'EB Garamond', serif;
+  padding: 3% 3%;
+  border-style: solid;
+  background-color: white;
+}
+
+#count {
+  color: white;
+  text-align: center;
+  margin: .7% 0% 2% 0%;
+}
+
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+  margin: 2px;
+}
+
+ul {
+  list-style-type:square;
+}
+
+ul li {
+  /*padding: 5px 0px;*/
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 5px 0px;
+  font-size: 2.1em;
+}
+
+h2 {
+  margin: 0px;
+  font-weight:normal;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin: 0px;
+  font-size: 1.13em;
+}
+
+.diamondSymbol {
+  font-size: 0.87em;
+}
+
+.jobTitle{
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.jobDate {
+  float:right;
+}
+
+.jobLocation {
+  font-weight: normal;
+  float: right;
+  font-style: italic;
+}
