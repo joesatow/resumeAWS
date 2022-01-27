@@ -13,6 +13,6 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: test get-function
-        run: cd resumeAWS/getFunction && python3 test.py -v && cd ..
+        run: cd getFunction && python3 test.py -v && cd ..
       - name: test put-function
-        run: cd resumeAWS/putFunction && python3 test.py -v && cd ..
+        run: cd putFunction && python3 test.py -v && cd ..
