@@ -66,6 +66,7 @@ Resources:
       KeySchema:
         - AttributeName: "ID"
           KeyType: "HASH"
+          
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
