@@ -22,3 +22,13 @@ jobs:
         run: cd getFunction && python3 test.py -v && cd ..
       - name: test put-function
         run: cd putFunction && python3 test.py -v && cd ..
+
+  build-and-deploy-infra:
+    needs: test-infra
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: aws-actions/setup-sam@v1
+      - run: sam build
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
