@@ -18,11 +18,6 @@ jobs:
       - name: Install boto3
         run:
           pip3 install boto3
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
-          aws-region: us-east-1
       - name: test get-function
         run: cd getFunction && python3 test.py -v && cd ..
       - name: test put-function
