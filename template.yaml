@@ -66,15 +66,4 @@ Resources:
       KeySchema:
         - AttributeName: "ID"
           KeyType: "HASH"
-
-  DynamoDBTable1:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      TableName: visitors12
-      BillingMode: PAY_PER_REQUEST
-      AttributeDefinitions:
-        - AttributeName: "ID"
-          AttributeType: "S"
-      KeySchema:
-        - AttributeName: "ID"
-          KeyType: "HASH"
+          
