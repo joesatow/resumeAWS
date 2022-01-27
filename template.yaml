@@ -66,11 +66,11 @@ Resources:
       KeySchema:
         - AttributeName: "ID"
           KeyType: "HASH"
-          
-  DynamoDBTable:
+
+  DynamoDBTable1:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: visitors1
+      TableName: visitors12
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions:
         - AttributeName: "ID"
