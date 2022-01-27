@@ -1,7 +1,7 @@
 import json
 import boto3
 
-client = boto3.client('dynamodb')
+client = boto3.client('dynamodb', region_name='us-east-1')
 
 def lambda_handler(event, context):
   data = client.scan(
