@@ -14,8 +14,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Install boto3
         run:
-          pip3 install boto3 && echo "[default]
-region=us-east-1" >> ~/.aws/config
+          pip3 install boto3 && echo "[default]" >> ~/.aws/config && echo "region=us-east-1" >> ~/.aws/config
       - name: test get-function
         run: cd getFunction && python3 test.py -v && cd ..
       - name: test put-function
