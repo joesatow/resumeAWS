@@ -42,4 +42,4 @@ jobs:
           args: --delete
         env:
           AWS_S3_BUCKET: josephsatow.com
-          SOURCE_DIR: resumeAWS/resumeHTML
+          SOURCE_DIR: resumeHTML
