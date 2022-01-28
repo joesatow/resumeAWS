@@ -88,7 +88,6 @@
         .then(() => fetch (' https://okg2j4vavj.execute-api.us-east-1.amazonaws.com/Prod/get'))
         .then(response => response.json())
         .then((data) => {
-          console.log(data)
             document.getElementById('clicks').innerText = data['N']
         })
   </script><h3 id="count">Visitors: <a id="clicks"></a></h3>

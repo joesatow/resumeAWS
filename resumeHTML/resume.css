@@ -14,6 +14,12 @@ body {
   background-color: white;
 }
 
+@media only screen and (max-width: 750px) {
+  #resume {
+    margin: 2% 4% 0% 4%;
+  }
+}
+
 #count {
   color: white;
   text-align: center;
