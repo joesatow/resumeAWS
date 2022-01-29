@@ -2,10 +2,6 @@ html {
   background-color: rgb(74,84,99);
 }
 
-body {
-
-}
-
 #resume {
   margin: 2% 15% 0% 15%;
   font-family: 'EB Garamond', serif;
@@ -17,6 +13,10 @@ body {
 @media only screen and (max-width: 750px) {
   #resume {
     margin: 2% 4% 0% 4%;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
   }
 }
 
